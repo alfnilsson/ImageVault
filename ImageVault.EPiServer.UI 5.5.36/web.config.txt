@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+	<location path="EPiServer">
+		<system.webServer>
+			<handlers>
+				<clear />
+				<!-- Add this directly after <clear /> -->
+				<add name="InsertMediaScriptHandler"
+						 path="EPiServer/ImageVault.EPiServer.UI/5.5.36/ClientResources/Common/scripts/imagevault-insert-media/scripts/insertmedia.min.js"
+						 verb="GET"
+						 type="Toders.Web.ImageVaultScriptWorkaround.InsertMediaScriptHandler, Toders.Web" />
+			</handlers>
+		</system.webServer>
+	</location>
+</configuration>
