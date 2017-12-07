@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+	<location path="EPiServer">
+		<system.webServer>
+			<handlers>
+				<clear />
+				<!-- Add this directly after <clear /> -->
+				<add name="AssemblyResourceLoader-Integrated-4.0"
+						 path="WebResource.axd"
+						 verb="GET,DEBUG"
+						 type="System.Web.Handlers.AssemblyResourceLoader"
+						 preCondition="integratedMode,runtimeVersionv4.0" />
+			</handlers>
+		</system.webServer>
+	</location>
+</configuration>
